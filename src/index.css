@@ -8,49 +8,51 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Core brand colors */
-    --navy: 213 94% 20%;
-    --navy-dark: 213 94% 12%;
-    --ocean: 193 82% 31%;
-    --ocean-light: 193 82% 45%;
-    --sky: 201 100% 96%;
-    --pearl: 210 20% 98%;
+    /* Core brand colors - Tech-inspired blues, whites, and greys */
+    --tech-blue: 217 91% 55%;
+    --tech-blue-dark: 217 91% 45%;
+    --tech-blue-light: 217 91% 65%;
+    --tech-navy: 220 70% 25%;
+    --tech-grey: 210 10% 45%;
+    --tech-grey-light: 210 10% 95%;
+    --tech-white: 0 0% 100%;
+    --tech-accent: 197 100% 50%;
     
     /* System colors */
     --background: 0 0% 100%;
-    --foreground: 213 39% 20%;
+    --foreground: 220 20% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 213 39% 20%;
+    --card-foreground: 220 20% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 213 39% 20%;
+    --popover-foreground: 220 20% 20%;
 
-    --primary: 213 94% 20%;
+    --primary: 217 91% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 193 82% 31%;
+    --secondary: 220 70% 25%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 20% 96%;
-    --muted-foreground: 213 13% 45%;
+    --muted: 210 10% 95%;
+    --muted-foreground: 220 10% 45%;
 
-    --accent: 193 82% 31%;
+    --accent: 197 100% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214 20% 91%;
-    --input: 214 20% 91%;
-    --ring: 213 94% 20%;
+    --border: 210 10% 90%;
+    --input: 210 10% 90%;
+    --ring: 217 91% 55%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--navy)), hsl(var(--ocean)));
-    --gradient-hero: linear-gradient(180deg, hsl(var(--navy)), hsl(var(--navy-dark)));
-    --gradient-card: linear-gradient(135deg, hsl(var(--pearl)), hsl(var(--sky)));
+    --gradient-primary: linear-gradient(135deg, hsl(var(--tech-blue)), hsl(var(--tech-blue-dark)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--tech-navy)), hsl(var(--tech-blue)));
+    --gradient-card: linear-gradient(135deg, hsl(var(--tech-white)), hsl(var(--tech-grey-light)));
     
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 hsl(var(--navy) / 0.05);
