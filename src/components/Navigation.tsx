@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,11 +16,14 @@ const Navigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: "smooth" });
-    setIsMobileMenuOpen(false);
-  };
+  const navItems = [
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Industries", href: "/industries" },
+    { name: "Blog", href: "/blog" },
+    { name: "Contact", href: "/contact" },
+  ];
 
   return (
     <nav
@@ -29,28 +34,28 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              GlobalTrade Connect
-            </h1>
+            <Link to="/" className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+              NLR Global Services
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Button variant="nav" onClick={() => scrollToSection("home")}>
-              Home
-            </Button>
-            <Button variant="nav" onClick={() => scrollToSection("about")}>
-              About Us
-            </Button>
-            <Button variant="nav" onClick={() => scrollToSection("services")}>
-              Services
-            </Button>
-            <Button variant="nav" onClick={() => scrollToSection("contact")}>
-              Contact
-            </Button>
-            <Button variant="hero" size="default" onClick={() => scrollToSection("contact")}>
-              Get Started
-            </Button>
+            {navItems.map((item) => (
+              <Link key={item.name} to={item.href}>
+                <Button 
+                  variant="nav"
+                  className={location.pathname === item.href ? "text-primary" : ""}
+                >
+                  {item.name}
+                </Button>
+              </Link>
+            ))}
+            <Link to="/contact">
+              <Button variant="hero" size="default">
+                Get Started
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -69,41 +74,27 @@ const Navigation = () => {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="md:hidden pb-6 space-y-3">
-            <Button
-              variant="ghost"
-              className="w-full justify-start"
-              onClick={() => scrollToSection("home")}
-            >
-              Home
-            </Button>
-            <Button
-              variant="ghost"
-              className="w-full justify-start"
-              onClick={() => scrollToSection("about")}
-            >
-              About Us
-            </Button>
-            <Button
-              variant="ghost"
-              className="w-full justify-start"
-              onClick={() => scrollToSection("services")}
-            >
-              Services
-            </Button>
-            <Button
-              variant="ghost"
-              className="w-full justify-start"
-              onClick={() => scrollToSection("contact")}
-            >
-              Contact
-            </Button>
-            <Button
-              variant="hero"
-              className="w-full"
-              onClick={() => scrollToSection("contact")}
-            >
-              Get Started
-            </Button>
+            {navItems.map((item) => (
+              <Link 
+                key={item.name} 
+                to={item.href}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <Button
+                  variant="ghost"
+                  className={`w-full justify-start ${
+                    location.pathname === item.href ? "text-primary" : ""
+                  }`}
+                >
+                  {item.name}
+                </Button>
+              </Link>
+            ))}
+            <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+              <Button variant="hero" className="w-full">
+                Get Started
+              </Button>
+            </Link>
           </div>
         )}
       </div>
