@@ -1,80 +1,80 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ServiceCard from "@/components/ServiceCard";
-import { Cloud, Shield, Code, Monitor, Globe, Smartphone } from "lucide-react";
+import { Users, GraduationCap, Plane, FileCheck, HeartHandshake, Globe } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: Monitor,
-      title: "IT Consulting",
-      description: "Strategic technology guidance to align IT with your business goals",
+      icon: Users,
+      title: "Nurse Recruitment",
+      description: "Sourcing qualified nurses from India and Indonesia",
       features: [
-        "Digital transformation strategy",
-        "IT infrastructure assessment",
-        "Technology roadmap planning",
-        "Risk assessment and mitigation",
-        "Cost optimization strategies"
+        "Rigorous screening process",
+        "Qualification verification",
+        "Experience assessment",
+        "Background checks",
+        "Initial language evaluation"
       ]
     },
     {
-      icon: Cloud,
-      title: "Cloud Solutions",
-      description: "Scalable cloud infrastructure and migration services",
+      icon: GraduationCap,
+      title: "Language Training",
+      description: "Comprehensive German language program to C1 level",
       features: [
-        "Cloud migration and deployment",
-        "AWS, Azure, and Google Cloud",
-        "Hybrid cloud solutions",
-        "Cloud security and compliance",
-        "24/7 cloud monitoring"
+        "Intensive German courses",
+        "Medical terminology training",
+        "Cultural orientation",
+        "Online and offline classes",
+        "Regular progress assessments"
       ]
     },
     {
-      icon: Code,
-      title: "Software Development",
-      description: "Custom software solutions tailored to your needs",
+      icon: Plane,
+      title: "Relocation Support",
+      description: "Complete assistance with moving to Germany",
       features: [
-        "Enterprise application development",
-        "API development and integration",
-        "Legacy system modernization",
-        "Quality assurance and testing",
-        "Agile development methodology"
+        "Visa processing support",
+        "Document preparation",
+        "Travel arrangements",
+        "Accommodation assistance",
+        "Airport pickup service"
       ]
     },
     {
-      icon: Shield,
-      title: "Cybersecurity",
-      description: "Comprehensive security solutions to protect your digital assets",
+      icon: FileCheck,
+      title: "Credential Recognition",
+      description: "Support with German nursing license recognition",
       features: [
-        "Security audits and assessments",
-        "Threat detection and response",
-        "Security compliance (GDPR, HIPAA)",
-        "Penetration testing",
-        "Security awareness training"
+        "Document translation",
+        "Application preparation",
+        "Authority liaison",
+        "Exam preparation support",
+        "Professional guidance"
       ]
     },
     {
-      icon: Monitor,
-      title: "Managed IT Support",
-      description: "Proactive IT management and support services",
+      icon: HeartHandshake,
+      title: "Integration Support",
+      description: "Helping nurses settle into German life and work",
       features: [
-        "24/7 helpdesk support",
-        "Network monitoring and management",
-        "Backup and disaster recovery",
-        "Software updates and patches",
-        "IT asset management"
+        "Workplace orientation",
+        "Cultural integration programs",
+        "Mentorship programs",
+        "Community building",
+        "24/7 support helpline"
       ]
     },
     {
-      icon: Smartphone,
-      title: "Web & App Development",
-      description: "Modern web and mobile applications that drive engagement",
+      icon: Globe,
+      title: "Hospital Partnership",
+      description: "Comprehensive staffing solutions for healthcare facilities",
       features: [
-        "Responsive web development",
-        "iOS and Android apps",
-        "Progressive web applications",
-        "E-commerce solutions",
-        "UI/UX design services"
+        "Customized recruitment",
+        "Volume hiring capabilities",
+        "Quality assurance",
+        "Replacement guarantee",
+        "Ongoing partnership support"
       ]
     }
   ];
