@@ -1,80 +1,80 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ServiceCard from "@/components/ServiceCard";
-import { Users, GraduationCap, Plane, FileCheck, HeartHandshake, Globe } from "lucide-react";
+import { Building2, Wrench, Snowflake, Droplets, Settings, Shield } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: Users,
-      title: "Nurse Recruitment",
-      description: "Sourcing qualified nurses from India and Indonesia",
+      icon: Building2,
+      title: "Construction Materials",
+      description: "High-quality materials for modern construction projects",
       features: [
-        "Rigorous screening process",
-        "Qualification verification",
-        "Experience assessment",
-        "Background checks",
-        "Initial language evaluation"
+        "Premium building materials",
+        "Structural components",
+        "Finishing materials",
+        "Insulation products",
+        "Quality certifications"
       ]
     },
     {
-      icon: GraduationCap,
-      title: "Language Training",
-      description: "Comprehensive German language program to C1 level",
+      icon: Wrench,
+      title: "MEP Systems",
+      description: "Mechanical, Electrical, and Plumbing solutions",
       features: [
-        "Intensive German courses",
-        "Medical terminology training",
-        "Cultural orientation",
-        "Online and offline classes",
-        "Regular progress assessments"
+        "HVAC equipment",
+        "Electrical components",
+        "Plumbing fixtures",
+        "Control systems",
+        "Energy-efficient solutions"
       ]
     },
     {
-      icon: Plane,
-      title: "Relocation Support",
-      description: "Complete assistance with moving to Germany",
+      icon: Snowflake,
+      title: "HVAC Solutions",
+      description: "Advanced climate control and ventilation systems",
       features: [
-        "Visa processing support",
-        "Document preparation",
-        "Travel arrangements",
-        "Accommodation assistance",
-        "Airport pickup service"
+        "Air conditioning units",
+        "Heating systems",
+        "Ventilation equipment",
+        "Air quality control",
+        "Energy management"
       ]
     },
     {
-      icon: FileCheck,
-      title: "Credential Recognition",
-      description: "Support with German nursing license recognition",
+      icon: Settings,
+      title: "Instrumentation & Controls",
+      description: "Precision instruments and control systems",
       features: [
-        "Document translation",
-        "Application preparation",
-        "Authority liaison",
-        "Exam preparation support",
-        "Professional guidance"
+        "Process control instruments",
+        "Automation systems",
+        "Monitoring equipment",
+        "Safety systems",
+        "Calibration services"
       ]
     },
     {
-      icon: HeartHandshake,
-      title: "Integration Support",
-      description: "Helping nurses settle into German life and work",
+      icon: Shield,
+      title: "District Cooling",
+      description: "Efficient cooling solutions for large developments",
       features: [
-        "Workplace orientation",
-        "Cultural integration programs",
-        "Mentorship programs",
-        "Community building",
-        "24/7 support helpline"
+        "Cooling plants equipment",
+        "Distribution networks",
+        "Thermal insulation",
+        "Field joint kits",
+        "Maintenance supplies"
       ]
     },
     {
-      icon: Globe,
-      title: "Hospital Partnership",
-      description: "Comprehensive staffing solutions for healthcare facilities",
+      icon: Droplets,
+      title: "Oil & Gas Products",
+      description: "Specialized solutions for the energy sector",
       features: [
-        "Customized recruitment",
-        "Volume hiring capabilities",
-        "Quality assurance",
-        "Replacement guarantee",
-        "Ongoing partnership support"
+        "Pipeline components",
+        "Valves and fittings",
+        "Safety equipment",
+        "Drilling supplies",
+        "Maintenance tools"
       ]
     }
   ];
@@ -90,7 +90,7 @@ const Services = () => {
               Our Services
             </h1>
             <p className="text-xl text-primary-foreground/90">
-              Comprehensive IT solutions to power your business forward
+              High-quality materials and equipment for construction and Oil & Gas sectors
             </p>
           </div>
         </div>
@@ -110,10 +110,10 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6 text-foreground">
-              Ready to Transform Your Business?
+              Ready to Partner with NADA Trading?
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Let's discuss how our services can help you achieve your technology goals
+              Let's discuss how our products and services can support your projects
             </p>
             <a 
               href="/contact" 

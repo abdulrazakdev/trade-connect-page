@@ -1,26 +1,26 @@
-import { Target, Eye, Lightbulb, Users } from "lucide-react";
+import { Target, Eye, Shield, Handshake } from "lucide-react";
 
 const MissionValues = () => {
   const values = [
     {
       icon: Target,
       title: "Our Mission",
-      description: "To empower businesses with innovative technology solutions that drive growth, efficiency, and competitive advantage in the digital age."
+      description: "To empower our clients in the construction and Oil & Gas sectors by providing top-tier products and unparalleled service, contributing to infrastructure and energy development in KSA."
     },
     {
       icon: Eye,
       title: "Our Vision",
-      description: "To be the global leader in IT services, recognized for excellence, innovation, and transformative impact on businesses worldwide."
+      description: "To revolutionize the trading business by delivering sustainable construction solutions, committed to conserving resources and driving growth for a brighter future."
     },
     {
-      icon: Lightbulb,
-      title: "Innovation",
-      description: "We embrace cutting-edge technologies and creative thinking to deliver solutions that push boundaries and exceed expectations."
+      icon: Shield,
+      title: "Integrity",
+      description: "Our transparent practices ensure that our clients are informed and confident in their trading decisions, fostering security in an often volatile market."
     },
     {
-      icon: Users,
-      title: "Partnership",
-      description: "We build lasting relationships with our clients, working as an extension of their team to achieve shared success."
+      icon: Handshake,
+      title: "Excellence",
+      description: "Excellence drives our commitment to consistently deliver superior products and services with collaboration and partnership."
     }
   ];
 

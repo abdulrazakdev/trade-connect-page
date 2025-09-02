@@ -15,7 +15,7 @@ const Contact = () => {
               Get in Touch
             </h1>
             <p className="text-xl text-primary-foreground/90">
-              Let's discuss how we can help transform your business
+              Get in touch for premium construction and Oil & Gas solutions
             </p>
           </div>
         </div>
@@ -34,10 +34,10 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Office Address</h3>
                       <p className="text-muted-foreground">
-                        123 Tech Park Boulevard<br />
-                        Suite 400<br />
-                        San Francisco, CA 94105<br />
-                        United States
+                        Rafi Ibn Amrou<br />
+                        Mishrifah District<br />
+                        Al Mubarraz<br />
+                        Kingdom of Saudi Arabia
                       </p>
                     </div>
                   </div>

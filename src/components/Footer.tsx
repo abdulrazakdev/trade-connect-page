@@ -7,27 +7,27 @@ const Footer = () => {
   const footerLinks = {
     Company: [
       { name: "About Us", href: "/about" },
-      { name: "Our Team", href: "/about" },
-      { name: "Careers", href: "#" },
-      { name: "Press Room", href: "#" }
+      { name: "Our Mission", href: "/about" },
+      { name: "Our Values", href: "/about" },
+      { name: "Our Goals", href: "/about" }
     ],
     Services: [
-      { name: "IT Consulting", href: "/services" },
-      { name: "Cloud Solutions", href: "/services" },
-      { name: "Software Development", href: "/services" },
-      { name: "Cybersecurity", href: "/services" }
+      { name: "Construction Solutions", href: "/services" },
+      { name: "MEP & HVAC", href: "/services" },
+      { name: "District Cooling", href: "/services" },
+      { name: "Oil & Gas Products", href: "/services" }
     ],
-    Resources: [
-      { name: "Blog", href: "/blog" },
-      { name: "Case Studies", href: "/blog" },
-      { name: "FAQs", href: "#" },
-      { name: "Documentation", href: "#" }
+    Industries: [
+      { name: "Construction", href: "/industries" },
+      { name: "Oil & Gas", href: "/industries" },
+      { name: "Infrastructure", href: "/industries" },
+      { name: "Energy", href: "/industries" }
     ],
-    Legal: [
-      { name: "Privacy Policy", href: "#" },
-      { name: "Terms of Service", href: "#" },
-      { name: "Cookie Policy", href: "#" },
-      { name: "Compliance", href: "#" }
+    Contact: [
+      { name: "Get Quote", href: "/contact" },
+      { name: "Support", href: "/contact" },
+      { name: "Partnership", href: "/contact" },
+      { name: "Careers", href: "#" }
     ]
   };
 
@@ -37,10 +37,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           <div className="lg:col-span-1">
             <Link to="/" className="text-2xl font-bold mb-4 block">
-              NLR Global Services
+              NADA Trading
             </Link>
             <p className="text-primary-foreground/80 mb-6">
-              Empowering businesses through innovative technology solutions.
+              Your trusted partner for construction and Oil & Gas solutions.
             </p>
             <div className="flex gap-4">
               <a
@@ -96,22 +96,22 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-white/10 grid md:grid-cols-3 gap-4">
           <div className="flex items-start gap-2 text-primary-foreground/80">
             <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0" />
-            <span>123 Tech Park<br />Silicon Valley, CA 94025</span>
+            <span>Rafi Ibn Amrou, Mishrifah Dist.<br />Al Mubarraz, KSA</span>
           </div>
           <div className="flex items-center gap-2 text-primary-foreground/80">
             <Phone className="h-5 w-5 flex-shrink-0" />
-            <span>+1 (555) 123-4567</span>
+            <span>+966 54 199 3733</span>
           </div>
           <div className="flex items-center gap-2 text-primary-foreground/80">
             <Mail className="h-5 w-5 flex-shrink-0" />
-            <span>info@nlrglobal.com</span>
+            <span>sales@nada-trading.com</span>
           </div>
         </div>
 
         <div className="mt-8 pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/80 text-center md:text-left">
-              © {currentYear} NLR Global Services. All rights reserved.
+              © {currentYear} NADA Trading. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">

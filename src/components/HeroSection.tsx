@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Users, Globe, GraduationCap } from "lucide-react";
+import { ArrowRight, Building2, Wrench, Droplets } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
@@ -10,67 +10,67 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 py-24 relative z-10">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary-foreground">
-            Connecting Global Talent to
-            <span className="block mt-2 bg-gradient-gold bg-clip-text text-transparent">
-              European Healthcare
+            Empowering Construction &
+            <span className="block mt-2 bg-gradient-orange bg-clip-text text-transparent">
+              Oil & Gas Excellence
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-3xl mx-auto">
-            Your bridge to a nursing career in Germany. We recruit qualified nurses from India and Indonesia, 
-            provide comprehensive German language training, and ensure successful placement in top healthcare facilities.
+            Your trusted partner for high-quality materials, equipment, and services tailored to 
+            the construction and Oil & Gas sectors in Kingdom of Saudi Arabia.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Link to="/for-nurses">
+            <Link to="/services">
               <Button 
                 variant="hero" 
                 size="xl"
                 className="group bg-secondary text-secondary-foreground hover:bg-secondary/90"
               >
-                Apply as a Nurse
+                Explore Our Solutions
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
-            <Link to="/for-hospitals">
+            <Link to="/contact">
               <Button 
                 variant="outline" 
                 size="xl"
                 className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20"
               >
-                Partner as a Hospital
+                Get in Touch
               </Button>
             </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <Users className="h-12 w-12 text-secondary mx-auto mb-4" />
+              <Building2 className="h-12 w-12 text-secondary mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-primary-foreground mb-2">
-                500+ Nurses Placed
+                Construction Solutions
               </h3>
               <p className="text-primary-foreground/80">
-                Successfully working in Germany
+                MEP, HVAC systems & controls
               </p>
             </div>
             
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <Globe className="h-12 w-12 text-secondary mx-auto mb-4" />
+              <Droplets className="h-12 w-12 text-secondary mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-primary-foreground mb-2">
-                C1 German Training
+                Oil & Gas Products
               </h3>
               <p className="text-primary-foreground/80">
-                Complete language proficiency
+                Robust industry solutions
               </p>
             </div>
             
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <GraduationCap className="h-12 w-12 text-secondary mx-auto mb-4" />
+              <Wrench className="h-12 w-12 text-secondary mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-primary-foreground mb-2">
-                End-to-End Support
+                District Cooling
               </h3>
               <p className="text-primary-foreground/80">
-                From recruitment to deployment
+                Thermal efficiency systems
               </p>
             </div>
           </div>

@@ -20,9 +20,7 @@ const Navigation = () => {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
-    { name: "How It Works", href: "/how-it-works" },
-    { name: "For Nurses", href: "/for-nurses" },
-    { name: "For Hospitals", href: "/for-hospitals" },
+    { name: "Industries", href: "/industries" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -36,7 +34,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <Link to="/" className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              NLR Global Services
+              NADA Trading
             </Link>
           </div>
 
